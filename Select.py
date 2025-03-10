@@ -1,4 +1,4 @@
-password = input("Please enter your password")
+password = input("Please enter your password:")
 if password == "letmein":
         print("Logan accepted")
 else:
