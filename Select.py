@@ -1,5 +1,5 @@
 password = input("Please enter your password:")
 if password == "letmein":
-        print("Logan accepted")
+        print("Logon accepted")
 else:
     print("Password incorrect")
