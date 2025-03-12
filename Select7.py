@@ -6,4 +6,4 @@ while count <= 10:
   count = count + 1
 
 #a) 11 times
-#b) Fixed loop
+#b) Conditional loop
