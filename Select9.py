@@ -8,3 +8,5 @@ while (guess < 5) and (number != rightnumber):
   guess = guess + 1
 if number == rightnumber:
   print("Well Done!")
+else:
+  print("Unlucky")
