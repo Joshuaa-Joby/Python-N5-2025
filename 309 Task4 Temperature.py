@@ -1,11 +1,15 @@
-Temperatures = []
+tempratures = []
+Average_temperature = 0
+temperature = int(input("Enter temprature: "))
+while temperature <-20 or temperature > 50:
+    print("Invalid temprature")
+    temperature = int(input("Enter temprature: "))
+else:
+    for i in range (6):
+        temperature = int(input("Enter temprature: "))
+        tempratures.append(temperature)  
 
-for index in range (5):
-    Temperature = input("Enter the Temperature:")
-while Temperature >-20 or Temperature <50:
-    print("Error, Temperature must be between -20 and 50")
-    Temperature = int(input("Please enter a valid Temperature:"))
-    Temperatures.append(Temperature)
-Average_Temperature = sum(Temperatures) / len(Temperatures)
-print("The Average Temperature is:", Average_Temperature)
-#still not completed
+for x in range(len(tempratures)):
+       
+       Average_temperature += (tempratures[x]/6)    
+print('The Average Temperature is:' + str(round(Average_temperature, 2))+ '°C') 
