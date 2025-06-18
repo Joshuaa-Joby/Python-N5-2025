@@ -1,20 +1,9 @@
+names =  ['flour','sugar','eggs','butter','chocolate','vanilla']
+ing = [100,100,2,50,50,10]
+newingredients = []
 
-ingredients = {
-    "flour (g)": 200,
-    "butter (g)": 100,
-    "sugar (g)": 80,
-    "eggs": 2,
-    "chocolate chips (g)": 150,
-    "vanilla (tsp)": 1
-}
+scale = 6/4
 
-
-original_servings = 4
-new_servings = 6
-
-scaling_factor = new_servings / original_servings
-scaled_ingredients = {}
-for item, amount in ingredients.items():
-    scaled_ingredients[item] = round(amount * scaling_factor, 2) if isinstance(amount, (int, float)) else amount
-
-print(f"Ingredients for {new_servings} people:")
+for index in range(6):
+    newingredients.append(ing[index]*scale)
+    print(names[index] + ": " +str(newingredients[index]))
