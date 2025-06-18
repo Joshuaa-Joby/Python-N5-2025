@@ -1,6 +1,8 @@
-english = int (input("Enter your English score: ")) #integer    
-maths = int(input("Enter your Maths score: "))  #integer
-computing = int(input("Enter your Computing score: ")) #integer
-art = int(input("Enter your Art score: ")) #integer
-total = english + maths + computing + art / 4 #float
-print("Your total score is: " + str(total)) #string
+english = int (input("Enter your English score: ")) 
+maths = int(input("Enter your Maths score: "))  
+computing = int(input("Enter your Computing score: ")) 
+art = int(input("Enter your Art score: ")) 
+total = english + maths + computing + art
+Avg = total / 4
+print("Your total score is: " + str(total), "%") 
+print("Your average score is: " + str(Avg), "%")
