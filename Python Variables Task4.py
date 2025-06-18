@@ -1,4 +1,5 @@
-celcius_temp = float(input("Enter temperature in Celsius: "))
-fahrenheit_temp = (celcius_temp * 9/5) + 32
-print("The temperature in Fahrenheit is: {fahrenheit_temp}°F")
-print("The temperature in Celsius is: {celcius_temp}°C")
+pencils = 50
+taken = 15
+add = 25
+total = pencils - taken + add
+print("The total number of pencils is: " + str(total))
