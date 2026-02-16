@@ -1,0 +1,53 @@
+import random
+
+userFruits = []
+counter = 0
+decision = "yes"
+
+mysteryFruits = ["apple", "banana", "blueberry", "kiwi", "mango",
+                 "orange", "peach", "pineapple", "raspberry", "strawberry"]
+
+while decision == "yes" and counter < 6:
+
+    fruit = input("Enter a fruit name (at least 4 characters): ").lower()
+
+    while len(fruit) < 4:
+        fruit = input("Too short! Enter a fruit name (at least 4 characters): ").lower()
+
+    userFruits.append(fruit)
+    counter = counter + 1
+
+    if counter < 6:
+        decision = input("Do you want to enter another fruit? (yes/no): ").lower()
+
+        while decision != "yes" and decision != "no":
+            decision = input("Please enter yes or no: ").lower()
+
+randomNumber = random.randint(0, 9)
+mysteryFruit = mysteryFruits[randomNumber]
+
+print("The fruits you entered were:")
+
+for fruit in userFruits:
+    print(fruit)
+
+print()
+print("The mystery fruit is:")
+print(mysteryFruit)
+
+userFruits.append(mysteryFruit)
+counter = counter + 1
+
+if counter < 3:
+    print("We recommend making a milkshake.")
+
+elif counter == 3 or counter == 4:
+    print("We recommend making a smoothie.")
+
+else:
+    print("We recommend making a fruit juice.")
+
+print("Final fruit list:")
+
+for fruit in userFruits:
+    print(fruit)
